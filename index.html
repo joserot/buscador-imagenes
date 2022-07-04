@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador iamgenes y videos</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" async src="./index.js"></script>
+</head>
+<body>
+    <nav class="navegacion">
+        <ul>
+            <li class="nav-img focus"><a href="#">IMAGENES</a></li>
+            <li ><a class="nav-video" href="#">VIDEOS</a></li>
+        </ul>
+    </nav>
+
+    <section class="imagenes">
+        <h2 class="title">Buscar Imagenes</h2>
+        <input class="input-busqueda s-img" type="search" name="rimg" placeholder="Buscar Imagenes">
+        <input name="buscar-imagen" class="input-boton btn-img" type="button" value="Buscar">
+        <img src="./assets/tail-spin.svg" class="loader hidden" alt="loader">
+       <div class="imagenes-contenedor">
+            <template id="template-imagenes">
+                <img />
+            </template>
+       </div>
+       <div class="links"></div>
+    </section>
+
+        <section class="videos hidden">
+            
+            <h2 class="title">Buscar Videos</h2>
+            <input class="input-busqueda s-video" type="search" name="search-video" placeholder="Buscar Videos">
+            <input name="buscar-video" class="input-boton btn-video" type="button" value="Buscar">
+            <img src="./assets/tail-spin.svg" class="loader hidden" alt="loader">
+           <div class="videos-contenedor">
+                <template id="template-videos">
+                    <video width="100%" height="auto" controls>
+                        <source src="" type="video/mp4">
+                    </video>
+                </template>
+           </div>
+        <div class="linksv"></div>
+          
+        </section>
+    
+</body>
+</html>
